@@ -8,7 +8,7 @@ class Solution():
         strikes = [1]*n
         strikes[0] = 0
         strikes[1] = 0
-
+#  the smallest factor of a non-prime number will not be > sqrt(n).
         # now go untill sqrt(n), and find all numbers that have not been processed yet
         # then change all of their multiples to zero since they won't be a prime num for sure 
         # then count the remaining 1s in the list
