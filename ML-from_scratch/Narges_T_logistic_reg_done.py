@@ -2,56 +2,50 @@ import numpy as np
 import  sklearn.datasets
 
 class LogisticRegression():
-
-    def __init__(self, lr=0.01, use_intercept=False, num_iter=10000):
+    def __init__(self, num_iterations=1000, lr=0.001):
+        self.num_iterations = num_iterations
         self.lr = lr
-        self.use_intercept = use_intercept
-        self.num_iter = num_iter
     
-    def _add_intercept(self, X):
-        intercept = np.ones(X.shape[0])
-        return np.concatenate((intercept, X))
-
+    def _loss(self, h,y):
+        return (-(y*np.log(h) + (1-y) * np.log(1-h))).mean()
+    
     def _sigmoid(self, z):
-        return 1/ (1+ np.exp(-z))
+        return 1 / (1 + np.exp(-z))
 
-    def _loss(self, h, y):
-        return (-y*(np.log(h)) - (1-y)*np.log(1-h)).mean()
+    def fit(self, x,y): 
 
+        x = np.insert(x, 0, 1, axis=1)
 
-    def fit(self, X, Y):
-        if self.use_intercept:
-            self._add_intercept(X)
+        self.theta_ = np.zeros(x.shape[1])
 
-        # initializing theta
-        self.theta = np.zeros(X.shape[1])
-
-        for i in range(self.num_iter):
-            z = np.dot(X, self.theta)
+        for i in range(self.num_iterations):
+            z = np.dot( self.theta_, x.T)
             h = self._sigmoid(z)
-            gradient = np.dot(X.T, h-y) /y.size
-            self.theta -= self.lr*gradient
 
-            if i%1000 == 0:
-                z = np.dot(X, self.theta)
+            gradient = np.dot(x.T, h-y) / y.size
+
+            self.theta_ -= self.lr*gradient
+
+            if i % 100 == 0:
+                z = np.dot(x, self.theta_)
                 h = self._sigmoid(z)
-                loss = self._loss(h, y)
-                print(f'loss= {loss}')
-                
+
+                loss = self._loss(h,y)
+                print(f"loss for iter {i} is {loss}")
+        
+
+
+
+
+
 
 
 if __name__ == "__main__":
-    iris = sklearn.datasets.load_iris()
-    X = iris.data[:32, :2]
-    print(X[1:4])
-    print(type(X))
-    print(X.shape)
-    y = (iris.target != 0) * 1
-    # print(iris.target[0:2])
-    print(y.shape)
-    y = y[:32]
-    print(y.shape)
 
-    print(y[1:10])
-    model = LogisticRegression(use_intercept=True)
-    model.fit(X,y)
+    data = sklearn.datasets.load_iris()
+    X = data.data
+    Y = data.target
+
+    model = LogisticRegression()
+    model.fit(X, Y)
+    print(model.theta_)
