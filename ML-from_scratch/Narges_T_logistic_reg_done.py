@@ -32,13 +32,6 @@ class LogisticRegression():
 
                 loss = self._loss(h,y)
                 print(f"loss for iter {i} is {loss}")
-        
-
-
-
-
-
-
 
 if __name__ == "__main__":
 

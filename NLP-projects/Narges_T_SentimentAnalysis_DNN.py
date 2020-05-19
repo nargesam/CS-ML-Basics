@@ -1,12 +1,4 @@
 '''
-Save file as: FIRSTNAME_LASTINITIAL_NLP.py
-Timestamp: 02042020
-Objective: Sentiment Analysis with the IMBD dataset
-
-@author: Amber
-
-Sentiment analysis
-
 Step 0: Download data from:
 https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
@@ -129,50 +121,6 @@ class movieReviewClassifierDnn():
         callback_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss',  factor=0.2,patience=3, min_lr=0.001)
         self.model.fit(x=self.review_train, y=self.sentiment_train, epochs=6,\
              validation_data=(self.review_valid, self.sentiment_valid), callbacks=[callback_lr])
-
-
-class movieReviewClassifierNLTK():
-    def __init__(self, datapath):
-        self.data = pd.read_csv(datapath)
-
-    def explain_data(self):
-        print(f" You have {len(self.data)} movie reviews.")
-        print(f" Here are the columns of the data: {list(self.data.columns)} movien reviews which the labels are distributed as {self.data.sentiment.value_counts()}.")
-        print("dataset  is balanced!! ")
-
-        print(type(self.data.sentiment.iloc[0]))
-    
-    def preprocessing(self):
-        # lowercase, stoprwords removal , lammitization, remove punctuation
-        self.data.loc[(self.data['sentiment'] == "negative"), 'sentiment'] = 0
-        self.data.loc[(self.data['review']== 'positive'), 'sentiment'] = 1
-
-        self.data['review'] = self.data['review'].str.lower()
-        self.data['review'].apply(lambda x: [item for item in x if item not in stopwords.words('english')])
-        
-        self.data['lemmatized_text']  = self.data['review'].apply(self._lemmatize_text())
-        
-        # print(self.data[3])
-    
-    def _lemmatize_text(self, text):
-        w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
-        lemmatizer  = nltk.stem.WordNextLemmatizer()
-        return [lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text)]
-
-    def split_train_valid(self):
-        pass
-
-    def model_svm(self):
-        pass
-
-    def model_randomForest(self):
-        pass
-
-    def  train(self):
-        pass
-
-    def test(self):
-        pass
 
     
 
