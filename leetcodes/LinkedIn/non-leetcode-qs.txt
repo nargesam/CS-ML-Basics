@@ -1,0 +1,36 @@
+1- Given two strings(representing 2 numbers), task is to return sum of these numbers and return as string. While problem is straight forward, there were alot of edge cases: like number could be decimal ("3.14"+"2.2") or big numbers may have commas ("100,000" + "1")
+
+2- Given a string s, return all palindromic subsequences of s.
+
+3- https://leetcode.com/discuss/interview-question/322054/LinkedIn-or-Merge-Segments
+
+
+
+4- You have some comic books and some coins, you can trade comic books for a fiction book or you can sell a comic book + coins needed to get a fiction book.
+coinsOffered is the number of coins offered if you sell a comic book.
+You want to get as many fiction books as possible.
+
+You had 10 comic books, coins you have 10, coinsNeeded: 1, coinsOffered: 1.
+You can trade all your comic books for fiction books in this case, you don't need to sell any.
+
+You have 4 comic books, coins you have: 8, coinsNeeded: 4, coinsOffered: 3
+You can trade 2 comic books for fiction books. If you try to sell one comic book, your coins will go up to 11 which is not enough for 3rd fiction book - so the answer is 2.
+
+5- You are given an N-Dimensional list with 2 methods:
+i) getDim -> returns the dimensions .e.g [5,4,3].
+ii) getElement([i,j,k]) -> return list[i][j][k] . You have to implement a method to sum all elements in the list.
+
+
+6- Given a random generator function that return 0 or 1 with equal probability, create another random function that will return any value between [0,6] with equal probability
+
+7- Given a random generator that produces a number 1 to 5 uniformly, write a function that produces a number from 1 to 7 uniformly.
+
+8- https://www.geeksforgeeks.org/print-0-and-1-with-50-probability/
+
+9- https://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
+
+10- https://www.geeksforgeeks.org/generate-0-1-25-75-probability/
+
+11-https://www.geeksforgeeks.org/random-number-generator-in-arbitrary-probability-distribution-fashion/
+
+
