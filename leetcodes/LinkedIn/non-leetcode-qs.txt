@@ -20,6 +20,9 @@ You can trade 2 comic books for fiction books. If you try to sell one comic book
 i) getDim -> returns the dimensions .e.g [5,4,3].
 ii) getElement([i,j,k]) -> return list[i][j][k] . You have to implement a method to sum all elements in the list.
 
+Given a biased 6-sided die of unknown bias, can we simulate a fair coin toss?
+
+
 
 6- Given a random generator function that return 0 or 1 with equal probability, create another random function that will return any value between [0,6] with equal probability
 

@@ -1,0 +1,42 @@
+1- https://leetcode.com/discuss/interview-question/374440/Twitter-or-OA-2019-or-Weird-Faculty DONE 
+2- https://leetcode.com/discuss/interview-question/376581/Twitter-or-OA-2019-or-Unique-Twitter-User-Id-Set DONE 
+3-https://leetcode.com/discuss/interview-question/406652/Twitter-or-OA-2019-or-Anagram-Difference DONE 
+4- https://medium.com/codingwithalex/slowest-key-hackerrank-problem-solution-in-python-a002ef802bff
+5- https://leetcode.com/problems/insert-delete-getrandom-o1/ DONE
+6- https://leetcode.com/discuss/interview-question/859662/Twitter-Phone-Interview
+7- https://leetcode.com/discuss/interview-question/374443/Twitter-or-OA-2019-or-Coloring-the-blocks
+8- https://leetcode.com/discuss/interview-question/374846/Twitter-or-OA-2019-or-University-Career-Fair DONE 
+9- https://leetcode.com/discuss/interview-question/373110/Twitter-or-OA-2019-or-New-Office-Design
+10- https://leetcode.com/discuss/interview-question/375258/Twitter-or-OA-2019-or-Game-Events
+11- https://leetcode.com/discuss/interview-question/1045860/Twitter-Phone-interview-question
+12- https://leetcode.com/discuss/interview-question/406638/Twitter-or-OA-2019-or-Balanced-Sales-Array
+13- https://leetcode.com/discuss/interview-question/374446/Twitter-or-OA-2019-or-Efficient-Job-Processing-Service
+14- https://leetcode.com/discuss/interview-question/374443/twitter-oa-2019-coloring-the-blocks DONE 
+15- https://leetcode.com/problems/k-diff-pairs-in-an-array/ DONE
+16 - https://leetcode.com/discuss/interview-question/1116341/Twitter-or-Phone-or-Task-Assignment
+17- https://leetcode.com/problems/find-median-from-data-stream/ DONE
+18- https://leetcode.com/discuss/interview-question/124919/Twitter-or-Remove-Substring-Recursively IMP 
+19- https://leetcode.com/discuss/interview-question/375262/Twitter-or-OA-2019-or-Partitioning-array
+20- https://leetcode.com/discuss/interview-question/378508/Twitter-or-OA-2019-or-Reaching-Points IMP 
+21- https://leetcode.com/discuss/interview-question/444931/Twitter-or-Phone-or-Tweet-Counts IMP 
+22- https://leetcode.com/problems/text-justification/ IMP 
+23- https://leetcode.com/discuss/interview-question/406653/Twitter-or-OA-2019-or-Sub-palindrome IMP 
+24- https://leetcode.com/discuss/interview-question/363036/Twitter-or-OA-2019-or-Activate-Fountain
+25- https://leetcode.com/discuss/interview-question/374447/Twitter-or-OA-2019-or-Social-Network IMP 
+26- https://leetcode.com/discuss/interview-question/378237/Twitter-or-OA-2019-or-Authentication-Tokens IMP 
+27- https://leetcode.com/discuss/interview-question/379066/Twitter-or-OA-2019-or-Parking-Dilemma
+28- https://leetcode.com/discuss/interview-question/406659/Twitter-or-OA-2019-or-Get-Set-Go
+29- https://leetcode.com/problems/paint-house/ DONE
+30 - https://leetcode.com/discuss/interview-question/336848/Twitter-or-Phone-Screen-or-RGB-Stream
+31 - https://leetcode.com/discuss/interview-question/406638/Twitter-or-OA-2019-or-Balanced-Sales-Array
+32- https://leetcode.com/discuss/interview-question/390048/Twitter-or-OA-2019-or-Football-Events-Ordering
+33- https://leetcode.com/discuss/interview-question/231726/Twitter-or-Online-coding-challenge-or-Image-matching
+34- https://leetcode.com/problems/find-median-from-data-stream/ DONE 
+35- https://leetcode.com/discuss/interview-question/543889/Twitter-University-Recruit-Coding-Challenge-2020
+36-50: first top freq Twitter questions on leetcode (~10)  DONE 
+
+
+
+
+["TweetCounts","recordTweet","recordTweet","recordTweet","getTweetCountsPerFrequency","getTweetCountsPerFrequency"]
+[[],["tweet3",0],["tweet3",60],["tweet3",10],["minute","tweet3",0,59],["minute","tweet3",0,60],["tweet3",120],["hour","tweet3",0,210]]
